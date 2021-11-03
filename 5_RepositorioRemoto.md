@@ -1,58 +1,98 @@
-# Ejercicios de repositorios remotos
+---   
+title: Ejercicios de repositorios remotos
+titlepage: true
+titlepage-rule-height: 0
+titlepage-rule-color: 653097
+toc-own-page: true
+toc-title: Contenidos
+header-left: EDD
+header-right: GIT
+lang: es-ES
+footer-left: IES Jaume II el Just
+footer-right: \thepage
+titlepage-background: ./GIT.png
+---
 
-Para hacer estos ejercicios es necesario haber hecho antes los ejercicios sobre ramas.
 
-## Ejercicio 1
+# Ejercicio 1  
+1. Crear un nuevo repositorio público en GitHub con el nombre libro-git.
+        
+    ~~~
+       
+    ~~~
 
-1. Crear un nuevo repositorio público en GitHub con el nombre **libro-git**.
-2. Añadirlo al repositorio local del libro.
-3. Mostrar todos los repositorios remotos configurados.
+2. Añadirlo al repositorio local del libro
+       
+    
+        git remote add github "https://github.com/JonathanGranell/libro-git.git"
+       
 
-~~~git
-solución
-~~~
+3. Mostrar todos los repositorios remotos configurados.       
+        
+         git remote -v
+        
+    
+# Ejercicio 2
+    
+1. Añadir los cambios del repositorio local al repositorio remoto de GitHub
+       
+       git push -u github master 
+       
+        
 
-
-## Ejercicio 2
-
-1. Añadir los cambios del repositorio local al repositorio remoto de GitHub.
+        
 2. Acceder a GitHub y comprobar que se han subido los cambios mostrando el historial de versiones.
-
-~~~git
-solución
-~~~
-
-## Ejercicio 3
-
-1. Colaborar en el repositorio remoto **libro-git** de otro usuario.
-2. Clonar su repositorio **libro-git (mcuevaseljust)**.
-3. Añadir el fichero **autores.txt** que contenga el nombre del usuario y su correo electrónico.
+        
+        
+        
+    
+# Ejercicio 3
+    
+1. Colaborar en el repositorio remoto libro-git de otro usuario.
+        
+        git checkout master
+        git merge bibliografia
+        
+        
+2. Clonar su repositorio libro-git.
+        
+        git log --graph --all --oneline
+        
+        
+3. Añadir el fichero autores.txt  que   contenga el nombre del usuario y su correo
+electrónico.
+        
+        git branch -d bibliografia
+        
+        
 4. Añadir los cambios a la zona de intercambio temporal.
-5. Hacer un commit con el mensaje “Añadido autor.”
+        
+        git log --graph --all --oneline
+        
+        
+5. Hacer un commit con el mensaje “Añadido autor.
+
+
+
 6. Subir los cambios al repositorio remoto.
 
-~~~git
-solución
-~~~
 
-## Ejercicio 4
 
-1. Desde vuestra cuenta de GitHub, realizad un «Fork» del repositorio https://github.com/mcuevaseljust/guiaApunts.git.
-2. Modificad el fichero README.md, añadiendo vuestro nombre en la tabla.
-3. Haced un «Pull request» para contribuir en el repositorio de «mcuevaseljust», podéis dejar un comentario.
+   
+# Ejercicio 4 
+    
+1. Desde vuestra cuenta de GitHub realizad un «Fork» del repositorio https://github.com/mcuevaseljust/guiaApunts.git.
+        
+        git branch bibliografia
+        
+        
+2. Modificad el fichero README.md, añadiendo vuestro nombre en la tabla.        
+        git checkout bibliografia
+        
+        
+3. Haced un «Pull request» para contribuir en el repositorio de «mcuevaseljust» podéis dejar un comentario.
+        
+        nano bibliografia.txt
+                Scott Chacon and Ben Sarub. Pro Git. Apress Ryan Hodson. Ry's Git Tutorial. Smashwords (2014)
 
-Nota: En este ejercicio, deberéis enviar capturas de los pasos que vayáis llevando a cabo.
-
-~~~git
-solución
-~~~
-
-## Ejercicio 5
-
-1. Clonar el repositorio **mcuevaseljust/EjerciciosGit**
-2. Crea un repositorio en tu cuenta de GitHub, y sube el repositorio clonado con las soluciones de los diferentes ejercicios.
-3. Modifica el fichero README.md, indicando tu nombre e indica la dirección del repositorio.
-
-~~~git
-solución
-~~~
+        
