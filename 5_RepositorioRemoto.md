@@ -36,7 +36,7 @@ titlepage-background: ./GIT.png
     
 1. Añadir los cambios del repositorio local al repositorio remoto de GitHub
        
-       git push -u github master 
+       git push https://github.com/JonathanGranell/libro-git.git master
        
         
 
@@ -56,43 +56,41 @@ titlepage-background: ./GIT.png
         
 2. Clonar su repositorio libro-git.
         
-        git log --graph --all --oneline
+        git clone https://github.com/4tomyc/libro-git.git
         
         
 3. Añadir el fichero autores.txt  que   contenga el nombre del usuario y su correo
 electrónico.
         
-        git branch -d bibliografia
+        nano autores.txt
         
         
 4. Añadir los cambios a la zona de intercambio temporal.
         
-        git log --graph --all --oneline
+        git add .
         
         
 5. Hacer un commit con el mensaje “Añadido autor.
 
-
+        git commit -m "Añadido autores.txt"
 
 6. Subir los cambios al repositorio remoto.
 
-
+        https://github.com/JonathanGranell/libro-git.git
 
    
 # Ejercicio 4 
     
 1. Desde vuestra cuenta de GitHub realizad un «Fork» del repositorio https://github.com/mcuevaseljust/guiaApunts.git.
         
-        git branch bibliografia
+        Esta añadido en mi repositorio cuando le mande mi enlace al profesor el lo podrá ver
         
         
 2. Modificad el fichero README.md, añadiendo vuestro nombre en la tabla.        
-        git checkout bibliografia
+        Nombre añadido a la tabla
         
         
 3. Haced un «Pull request» para contribuir en el repositorio de «mcuevaseljust» podéis dejar un comentario.
         
-        nano bibliografia.txt
-                Scott Chacon and Ben Sarub. Pro Git. Apress Ryan Hodson. Ry's Git Tutorial. Smashwords (2014)
-
+       Pull rquest creado que vera el profesor mcuevas en su usuario
         
